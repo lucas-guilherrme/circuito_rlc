@@ -12,7 +12,7 @@ Os circuitos RLC são circuitos elétricos que contêm um resistor (R), um indut
   * Unidade: Ohm (Ω)
   * Característica: Dissipa energia na forma de calor
   * Relação tensão-corrente:\
-$$ V = R.I $$ (Lei de Ohm)
+![Lei de Ohm](https://latex.codecogs.com/svg.latex?V=R{\cdot}i)
 
 ### Indutor (L)
 
