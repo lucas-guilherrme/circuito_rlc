@@ -39,7 +39,12 @@ No circuito RLC série, os três componentes são conectados em sequência, form
 ## Equação Diferencial
 
 Aplicando a Lei das Tensões de Kirchhoff:\
-![](https://latex.codecogs.com/svg.latex?$$
-v_f=v_r + v_l+ v_c\\
-v_f(t) = R{\cdot}i(t) + \frac{Ldi(t)}{dt} + \frac{∫i(t)dt}{Cdt}
-$$)
+### Equações do Circuito
+
+![LKT](https://latex.codecogs.com/svg.latex?V_{fonte}=V_R+V_L+V_C#gh-light-mode-only)
+![LKT](https://latex.codecogs.com/svg.latex?\color{white}V_{fonte}=V_R+V_L+V_C#gh-dark-mode-only)
+
+<br>
+
+![RLC](https://latex.codecogs.com/svg.latex?V(t)=R{\cdot}i(t)+L\frac{di(t)}{dt}+\frac{1}{C}\int%20i(t)dt#gh-light-mode-only)
+![RLC](https://latex.codecogs.com/svg.latex?\color{white}V(t)=R{\cdot}i(t)+L\frac{di(t)}{dt}+\frac{1}{C}\int%20i(t)dt#gh-dark-mode-only)
