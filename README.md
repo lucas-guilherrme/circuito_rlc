@@ -11,7 +11,7 @@ Os circuitos RLC são circuitos elétricos que contêm um resistor (R), um indut
   * Função: Limita a corrente elétrica
   * Unidade: Ohm (Ω)
   * Característica: Dissipa energia na forma de calor
-  * Relação tensão-corrente:
+  * Relação tensão-corrente:\
 $$ V = R\cdot I $$ (Lei de Ohm)
 
 ### Indutor (L)
