@@ -1,72 +1,31 @@
-# 📖 Introdução 
+# 📖 Circuitos RLC - Análise do Regime Transitório
 ---
 
-Os circuitos RLC são circuitos elétricos que contêm um resistor (R), um indutor (L) e um capacitor (C), conectados em série ou em paralelo. Estes circuitos são fundamentais no estudo de sistemas elétricos e eletrônicos, apresentando comportamentos interessantes como ressonância e filtragem de frequências.
+O regime transitório em circuitos RLC descreve o comportamento dinâmico do circuito durante o período entre dois estados estáveis. Diferente do regime permanente senoidal, o transitório analisa como as variáveis do circuito (tensão e corrente) evoluem no tempo após uma perturbação, como o fechamento ou abertura de uma chave.
 
-# 🔧 Componentes Básicos
+# ⚡ Circuitos de Segunda Ordem
+---
+## Definição e Características
+Circuitos RLC são circuitos de segunda ordem porque são descritos por equações diferenciais de segunda ordem. A ordem é determinada pelo número de elementos armazenadores de energia independentes (indutores e capacitores).
+
+# 🔄 Circuito RLC Série - Análise do Transitório
 ---
 
-### Resistor (R)
+Para o circuito RLC série sem fonte (resposta natural):\
+![Homogênea RLC](https://latex.codecogs.com/svg.latex?L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=0#gh-light-mode-only)
 
-  * Função: Limita a corrente elétrica
-  * Unidade: Ohm (Ω)
-  * Característica: Dissipa energia na forma de calor
-  * Relação tensão-corrente:\
-![Lei de Ohm](https://latex.codecogs.com/svg.latex?v(t)=R{\cdot}i)
+![Homogênea RLC](https://latex.codecogs.com/svg.latex?\color{white}L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=0#gh-dark-mode-only)
+Para o circuito com fonte (resposta completa):\
+![EDO com Fonte](https://latex.codecogs.com/svg.latex?L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=\frac{dv_s}{dt}#gh-light-mode-only)
 
-### Indutor (L)
+![EDO com Fonte](https://latex.codecogs.com/svg.latex?\color{white}L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=\frac{dv_s}{dt}#gh-dark-mode-only)
+onde v_s é a tensão da fonte.
 
-  * Função: Armazena energia em campo magnético
-  * Unidade: Henry (H)
-  * Característica: Oposição a variações de corrente
-  * Relação tensão-corrente:\
-![Tensão no indutor](https://latex.codecogs.com/svg.latex?v(t)=L{\cdot}\frac{di}{dt})
-### Capacitor (C)
-  
-  * Função: Armazena energia em campo elétrico
-  * Unidade: Farad (F)
-  * Característica: Oposição a variações de tensão
-  * Relação tensão-corrente:\
-![Corrente no capacitor](https://latex.codecogs.com/svg.latex?i(t)=C{\cdot}\frac{dv}{dt})
+## Forma Padrão da Equação
+A equação pode ser escrita na forma:\
 
-# ⚡ Circuito RLC Série
----
-
-No circuito RLC série, os três componentes são conectados em sequência, formando um único caminho para a corrente.
-
-<img width="282" height="151" alt="{27EDE50B-E514-4135-AF80-4822BDC3FD47}" src="https://github.com/user-attachments/assets/f1b24d4a-2f61-4753-aa5a-3d5ec7ee9aa9" />
-
-## Equação Diferencial
-
-Aplicando a Lei das Tensões de Kirchhoff:\
-### Equações do Circuito
-
-![LKT](https://latex.codecogs.com/svg.latex?V_{fonte}=V_R+V_L+V_C#gh-light-mode-only)
-![LKT](https://latex.codecogs.com/svg.latex?\color{white}V_{fonte}=V_R+V_L+V_C#gh-dark-mode-only)
-
-<br>
-
-![RLC](https://latex.codecogs.com/svg.latex?V(t)=R{\cdot}i(t)+L\frac{di(t)}{dt}+\frac{1}{C}\int%20i(t)dt#gh-light-mode-only)
-![RLC](https://latex.codecogs.com/svg.latex?\color{white}V(t)=R{\cdot}i(t)+L\frac{di(t)}{dt}+\frac{1}{C}\int%20i(t)dt#gh-dark-mode-only)
-
-Para uma fonte senoidal V(t) = V₀·sin(ωt):\
-
-![EDO RLC](https://latex.codecogs.com/svg.latex?L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=\omega%20V_0\cos(\omega%20t)#gh-light-mode-only)
-
-![EDO RLC](https://latex.codecogs.com/svg.latex?\color{white}L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=\omega%20V_0\cos(\omega%20t)#gh-dark-mode-only)
-
-### Impedância (Z)
-A impedância total do circuito série é:\
-![Impedância](https://latex.codecogs.com/svg.latex?Z=R+j\left(\omega%20L-\frac{1}{\omega%20C}\right)#gh-light-mode-only)
-
-![Impedância](https://latex.codecogs.com/svg.latex?\color{white}Z=R+j\left(\omega%20L-\frac{1}{\omega%20C}\right)#gh-dark-mode-only)
-Onde:
- * Parte real: Resistência R
- * Parte imaginária: Reatância total X = ωL - 1/ωC
- * j: Unidade imaginária (√-1)
-### Módulo da Impedância
-![Módulo Impedância](https://latex.codecogs.com/svg.latex?|Z|=\sqrt{R^2+\left(\omega%20L-\frac{1}{\omega%20C}\right)^2}#gh-light-mode-only)
-
-![Módulo Impedância](https://latex.codecogs.com/svg.latex?\color{white}|Z|=\sqrt{R^2+\left(\omega%20L-\frac{1}{\omega%20C}\right)^2}#gh-dark-mode-only)
-### Ângulo de Fase (φ)
-### Corrente no Circuito
+onde:
+ * α = R/(2L) → coeficiente de amortecimento (Np/s)
+ * ω₀ = 1/√(LC) → frequência natural não-amortecida (rad/s)
+ * x → variável de interesse (i ou v)
+## Resposta Natural (Sem Fonte)
