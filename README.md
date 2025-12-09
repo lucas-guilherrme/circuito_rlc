@@ -48,3 +48,25 @@ Aplicando a Lei das Tensões de Kirchhoff:\
 
 ![RLC](https://latex.codecogs.com/svg.latex?V(t)=R{\cdot}i(t)+L\frac{di(t)}{dt}+\frac{1}{C}\int%20i(t)dt#gh-light-mode-only)
 ![RLC](https://latex.codecogs.com/svg.latex?\color{white}V(t)=R{\cdot}i(t)+L\frac{di(t)}{dt}+\frac{1}{C}\int%20i(t)dt#gh-dark-mode-only)
+
+Para uma fonte senoidal V(t) = V₀·sin(ωt):\
+
+![EDO RLC](https://latex.codecogs.com/svg.latex?L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=\omega%20V_0\cos(\omega%20t)#gh-light-mode-only)
+
+![EDO RLC](https://latex.codecogs.com/svg.latex?\color{white}L\frac{d^2i}{dt^2}+R\frac{di}{dt}+\frac{1}{C}i=\omega%20V_0\cos(\omega%20t)#gh-dark-mode-only)
+
+### Impedância (Z)
+A impedância total do circuito série é:\
+![Impedância](https://latex.codecogs.com/svg.latex?Z=R+j\left(\omega%20L-\frac{1}{\omega%20C}\right)#gh-light-mode-only)
+
+![Impedância](https://latex.codecogs.com/svg.latex?\color{white}Z=R+j\left(\omega%20L-\frac{1}{\omega%20C}\right)#gh-dark-mode-only)
+Onde:
+ * Parte real: Resistência R
+ * Parte imaginária: Reatância total X = ωL - 1/ωC
+ * j: Unidade imaginária (√-1)
+### Módulo da Impedância
+![Módulo Impedância](https://latex.codecogs.com/svg.latex?|Z|=\sqrt{R^2+\left(\omega%20L-\frac{1}{\omega%20C}\right)^2}#gh-light-mode-only)
+
+![Módulo Impedância](https://latex.codecogs.com/svg.latex?\color{white}|Z|=\sqrt{R^2+\left(\omega%20L-\frac{1}{\omega%20C}\right)^2}#gh-dark-mode-only)
+### Ângulo de Fase (φ)
+### Corrente no Circuito
