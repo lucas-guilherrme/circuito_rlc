@@ -20,6 +20,7 @@ Os circuitos RLC são circuitos elétricos que contêm um resistor (R), um indut
   * Unidade: Henry (H)
   * Característica: Oposição a variações de corrente
   * Relação tensão-corrente:
+    ![Tensão no indutor](https://latex.codecogs.com/svg.latex?V=L{\cdot}\frac{di}{dt})
 V = L(di/dt)
 ### Capacitor (C)
   
