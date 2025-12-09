@@ -36,3 +36,10 @@ No circuito RLC série, os três componentes são conectados em sequência, form
 
 <img width="282" height="151" alt="{27EDE50B-E514-4135-AF80-4822BDC3FD47}" src="https://github.com/user-attachments/assets/f1b24d4a-2f61-4753-aa5a-3d5ec7ee9aa9" />
 
+## Equação Diferencial
+
+Aplicando a Lei das Tensões de Kirchhoff:
+$$
+V_fonte = V_R + V_L + V_C
+V(t) = R·i(t) + L·di(t)/dt + (1/C)∫i(t)dt
+$$
